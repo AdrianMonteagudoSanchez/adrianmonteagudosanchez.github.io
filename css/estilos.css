@@ -1,10 +1,67 @@
 * {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: white;
+  color: white;
 }
 
-.fondo {
-    background-image: url(/img/fondo/1142103.png);
-    background-size: cover;
+.body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.5) url(/img/fondo/fondo.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  margin: 0px;
+}
+
+a:hover {
+  color: #23a9f2;
+}
+
+.header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #101010;
+}
+
+.nav {
+  text-transform: uppercase;
+}
+
+.nav li {
+  list-style-type: none;
+  margin: 25px auto;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.inicio {
+  display: inline-flex;
+  position: absolute;
+  left: 0px;
+  margin-left: 70px;
+}
+
+.páginas {
+  display: inline-flex;
+  position: absolute;
+  right: 0px;
+  margin-right: 70px;
+}
+
+.páginas li a {
+  padding: 50px;
+}
+
+.section {
+  font-family: "Calibri";
+  font-weight: 300;
+  padding-top: 8rem;
+  margin-left: 3.8%;
+  margin-right: 15%;
+}
+
+.article {
+    columns: 2;
 }
