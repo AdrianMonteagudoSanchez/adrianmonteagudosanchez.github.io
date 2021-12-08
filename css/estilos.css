@@ -42,6 +42,16 @@ h1 {
   margin-left: 70px;
 }
 
+.inicio img{
+  transform: scale(1);
+  transition: 0.5s linear;
+}
+
+.inicio img:hover {
+  transform: scale(1.4);
+  transition: 0.5s linear;
+}
+
 .páginas a:hover {
   color: black;
   background-color: #ea5655;
@@ -187,6 +197,8 @@ h1 {
 .redes ul li img {
   width: 50px;
   height: 50px;
+  transform: rotate(0deg);
+  transition: 0.6s;
 }
 
 .redes ul li img:hover {
@@ -218,15 +230,24 @@ h1 {
 .tabla_cv {
   width: 50%;
   margin:20px auto;
-  margin-top: 60px;
+  margin-top: 12.5px;
   border-collapse: collapse;
   table-layout: fixed;
+  box-shadow: 0px 2px 10px;
+  border-radius: 10px;
+}
+
+.tabla_cv td {
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .adrian img {
   border-radius: 50%;
   border: 3px solid black;
-  width: 250px;
+  width: 250px;   
   margin-left: 30px;
   margin-bottom: 10px;
 }
@@ -259,4 +280,21 @@ h1 {
 
 .espaciado {
   padding-top: 10px;
+}
+
+.mapa iframe{
+  border-radius: 60%;
+}
+
+.formulario {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.títuloformulario {
+  text-align: center;
+  margin-top: 70px;
 }
