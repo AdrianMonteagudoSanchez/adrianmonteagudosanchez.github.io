@@ -1,23 +1,51 @@
 * {
-  color: white;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 33px;
 }
 
 .body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-}
-
-a:hover {
-  color: #23a9f2;
+  background-color: white;
 }
 
 .header {
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 100px;
   width: 100%;
-  background-color: rgba(17,17,17,0.75);
+  background-color: #101010;  
+}
+
+.header li {
+  display: inline-flex;
+  padding-right: 80px;
+}
+
+.header a {
+  margin-right: auto;
+  color: white;
+}
+
+.header img {
+  width: 40px;
+  padding: 20px;
+}
+
+.inicio {
+  margin-left: 70px;
+}
+
+.páginas a:hover {
+  color: black;
+  background-color: #ea5655;
+  border-radius: 10px;
 }
 
 .nav {
@@ -26,7 +54,7 @@ a:hover {
 
 .nav li {
   list-style-type: none;
-  margin: 40px auto;
+
 }
 
 .nav ul div li a {
@@ -34,50 +62,117 @@ a:hover {
   transition: all 0.3s linear;
 }
 
-/*Uso de la propiedad float*/
-.inicio {
-  float: left;
-  margin-left: 70px;
-}
-
-.páginas {
-  float: right;
-  display: inline-flex;
-  margin-right: 70px;
-}
-/*Uso de la propiedad float*/
-
 .páginas li a {
-  padding: 40px;
+  padding: 20px;
 }
 
 .section {
   font-family: "Calibri";
   font-weight: 300;
-  padding-top: 8rem;
-  margin-left: 3.8%;
-  margin-right: 15%;
+  padding-top: 1.5%;
+  margin-left: 10%;
+  height: 75%;
+  width: 80%;
+  text-align: center;
 }
 
-/*
-.article {
+.columnas {
+  margin: 20px auto;
+  padding-top: 40px;
+  border-radius: 20px;
+  background-color: rgba(17,17,17,0.75);
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
+  columns: 3;
+  height: 270px;
+  font-size: 20px;
+}
+
+.columnas li {
+  list-style-type: none;
+  color: white;
+}
+
+.columnas img {
+  width: 160px;
+  padding-top: 40px;
+}
+
+.section2 {
+  font-family: "Calibri";
+  font-weight: 300;
+  margin-left: 10%;
+  height: 75%;
+  width: 80%;
+  text-align: center;
+}
+
+.columnas2 {
+  margin: 20px auto;
+  padding-top: 40px;
+  border-radius: 20px;
+  background-color: rgba(17,17,17,0.75);
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
   columns: 2;
+  height: 270px;
+  font-size: 20px;
 }
-*/
 
-p {
-  margin-top: 0px;
+.columnas2 li {
+  list-style-type: none;
+  color: white;
+}
+
+.columnas2 img {
+  width: 160px;
+  padding-top: 40px;
 }
 
 .redes {
   position: fixed;
   right: 0px;
   height: 320px;
-  margin-top: 320px;
+  margin-top: 230px;
   margin-right: 20px;
   background-color: rgba(17,17,17,0.75);
   border-radius: 50px;
   width: 70px;
+}
+
+.section3 {
+  font-family: "Calibri";
+  font-weight: 300;
+  margin-left: 10%;
+  position: absolute;
+  height: 50%;
+  width: 80%;
+  text-align: center;
+}
+
+.columnas3 {
+  margin: 20px auto;
+  padding-top: 40px;
+  border-radius: 20px;
+  background-color: rgba(17,17,17,0.75);
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
+  columns: 1;
+  height: 270px;
+  font-size: 20px;
+}
+
+.columnas3 li {
+  list-style-type: none;
+  color: white;
+}
+
+.columnas3 img {
+  width: 160px;
+  padding-top: 40px;
 }
 
 .redes li {
@@ -99,33 +194,69 @@ p {
   transition: 0.6s;
 }
 
-.contenedor_footer {
+.footer {
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   height: 50px;
+  width: 100%;
   background-color: #101010;
 }
 
-.contenedor_footer h4 {
-  text-align: center;
+.footer h4 {
   font-family: 'Calibri';
-  position: relative;
-  padding-top: 15px;
+  padding-left: 70px;
+  color: white;
 }
 
-.video {
-  object-fit: cover;
-  width: 100%;
-  height: 95%;
-  position: absolute;
-  z-index: -1;
+.footer h4::after {
+  content: " | 2021 - 2022";
 }
 
-.section {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 80%;
-  height: 100%;
+.tabla_cv {
+  width: 50%;
+  margin:20px auto;
+  margin-top: 60px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.adrian img {
+  border-radius: 50%;
+  border: 3px solid black;
+  width: 250px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.tabla_cv h1 {
+  padding-left: 30px;
+}
+
+.contacto li {
+  display: inline-flex;
+}
+
+.contacto li p {
+  padding-left: 10px;
+}
+
+.contenedor_nombreyapellidos {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+.nombreyapellidos {
+  width: 400px;
+}
+
+.negrita {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.espaciado {
+  padding-top: 10px;
 }

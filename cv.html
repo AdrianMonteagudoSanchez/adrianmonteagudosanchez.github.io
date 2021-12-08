@@ -4,35 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="/css/estilos.css" />
+    <title>Curriculum Vitae</title>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <!--Estilos-->
+
     <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
+    <!--Fuentes-->
+
+    <!--Icono página-->
+    <link rel="icon" href="/img/icono/clase.svg" type="image/svg"/>
+    <!--Icono página-->
   </head>
-
-  <body class="fondo">
-
-    <div class="contenedor">
-        <header>
-
-        </header>
-
-        <article>
-            
-        </article>
-
-        <nav>
-
-        </nav>
-
-        <footer>
-          <div class="contenedor__footer">
-            <h2></h2>
+  <body class="body">
+    <header class="header">
+      <a href="index.html" class="inicio"><img src="../img/inicio/casa.svg" alt="inicio"/></a>
+      <nav class="nav">
+        <ul>
+          <div class="páginas">
+            <li><a href="cv.html">Currículum</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="proyecto.html">Proyecto</a></li>
           </div>
-        </footer>
-    </div>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <div class="redes">
+        <ul>
+          <li>
+            <a href="https://github.com/AdrianMonteagudoSanchez" target="blank"
+              ><img src="../img/redes/github.svg" alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/Nyxga" target="blank"
+              ><img src="../img/redes/reddit.svg" alt="reddit"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Nyxga1" target="blank"
+              ><img src="../img/redes/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/addriii.01/?hl=es" target="blank"
+              ><img src="../img/redes/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section>
+      <article>
+        <table class="tabla_cv">
+          <tr>
+            <td colspan="2" class="adrian"><img src="../img/Curriculum/foto curriculum/yo.jpeg" alt="Adrián"></td>
+            <td>
+            </td>
+            <td class="nombreyapellidos">
+              <div class="contenedor_nombreyapellidos">
+                <p>Adrián</p>
+                <p>Monteagudo Sánchez</p>
+              </div>
+              <p>Técnico de redes de datos</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="contacto">
+              <p class="negrita">Contacto</p>
+              <ul>
+                <li><img src="../img/Curriculum/Contacto/mail.svg" alt="correo"><p>adrian.monteagudo1@educa.madrid.org</p></li>
+                <li><img src="../img/Curriculum/Contacto/móvil.svg" alt="móvil"><p>+34 999 999 999</p></li><br>
+                <li><img src="../img/Curriculum/Contacto/localización.svg" alt="localización"><p>Madrid - España</p></li>
+              </ul>
+            </td>
+            <td rowspan="2"></td>
+            <td rowspan="2">
+              <p class="negrita">Experiencia profesional</p>
+              <p>-Realización de las labores necesarias de soporte técnico para los equipos informáticos</p>
+              <p>-Recuperación de datos en dispositivos de almacenamiento masivo</p>
+              <p>-Gestión de usuarios, permisos, unidades organizativas y equipos en Active Directory</p>
+              <p>-Resolución de las incidencias de software y hardware producidas en estaciones de trabajo, equipos ofimáticos y equipos portátiles de la empresa tanto en persona como en remoto</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="espaciado">
+              <p class="negrita">Quién soy</p>
+              <p>Mi nombre es Adrián Monteagudo Sánchez, nací el 27 de febrero de 2001 en Alemania, Bonn. Me apasiona la informática y los videojuegos.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="espaciado">
+              <p class="negrita">Referencias</p>
+              <p>✔ Español</p>
+              <p>✔ Inglés</p>
+              <p>✔ Aleman</p>
+            </td>
+            <td></td>
+            <td>
+              <p class="negrita">Educación</p>
+              <p>Educación Secundaria Obligatoria LOMCE (RD-Ley 5/2016)	-	16/10/2020	ENTREVIAS	MADRID	10569	3770	151</p>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <footer class="footer">
+      <h4>Página diseñada por Adrián Monteagudo Sánchez</h4>
+    </footer>
   </body>
-
 </html>
