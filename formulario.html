@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
 
-    <!--Estilos-->
-    <link rel="stylesheet" href="../css/estilos.css"/>
-    <!--Estilos-->
+<!--Estilos-->
+    <link rel="stylesheet" href="../css/estilos.css" />
+<!--Estilos-->
 
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
-    <!--Fuentes-->
+<!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+<!--Fuentes-->
 
-    <!--Icono página-->
-    <link rel="icon" href="../img/icono/clase.svg" type="image/svg"/>
-    <!--Icono página-->
+<!--Icono página-->
+    <link rel="icon" href="../img/icono/formulario.svg" type="image/svg" />
+<!--Icono página-->
   </head>
-
   <body class="body">
+    
+<!--Header-->
     <header class="header">
       <a href="index.html" class="inicio"
         ><img src="../img/inicio/casa.svg" alt="inicio"
       /></a>
       <nav class="nav">
         <ul>
-          <div class="páginas">
-            <li><a href="cv.html">Currículum</a></li>
-            <li><a href="formulario.html">Formulario</a></li>
-            <li><a href="proyecto.html">Proyecto</a></li>
-          </div>
+          <li><a href="./cv.html">Currículum</a></li>
+          <li><a href="./formulario.html">Formulario</a></li>
+          <li><a href="./proyecto.html">Proyecto</a></li>
         </ul>
       </nav>
     </header>
+<!--Header-->
+
+<!--Aside-->
     <aside>
       <div class="redes">
         <ul>
@@ -63,46 +64,52 @@
         </ul>
       </div>
     </aside>
-    <div class="títuloformulario">
+<!--Aside-->
+
+
+<!--Formulario-->
+    <div class="formulario">
       <h1>
         ↓ Rellene el siguiente formulario para poder aprobar Aplicaciones Web ↓
       </h1>
-    </div>
-    <div>
-      <form class="formulario">
-        <label for="nombre">Nombre</label>
-        <div>
+      <form>
+        <p>Nombre</p>
+        <label class="nombre">
           <input type="text" />
-        </div>
-        <label for="apellidos">Apellidos</label>
-        <div>
+        </label>
+        <p>Apellidos</p>
+        <label class="apellidos">
           <input type="text" />
-        </div>
-        <label for="email">Correo electrónico</label>
-        <div>
+        </label>
+        <p>Correo electrónico</p>
+        <label class="email">
           <input type="email" />
-        </div>
-        <label for="cumpleaños">Cumpleaños</label>
-        <div>
+        </label>
+        <p>Cumpleaños</p>
+        <label class="cumpleaños">
           <input type="date" />
-        </div>
+        </label>
         <p>Comida favorita</p>
-        <div>
-          <label for="Plátano">Plátano</label>
+        <label class="Plátano"
+          >Plátano
           <input type="checkbox" name="Plátano" id="Plátano" />
-          <label for="Manzana">Manzana</label>
+        </label>
+        <label class="Manzana"
+          >Manzana
           <input type="checkbox" />
-          <label for="Kiwi">Kiwi</label>
+        </label>
+        <label class="Kiwi"
+          >Kiwi
           <input type="checkbox" />
-        </div>
+        </label>
         <p>Sexo</p>
-        <div>
-          <label for="Masculino">Masculino</label>
+        <label class="Masculino">Masculino </label>
           <input type="radio" name="sexo" id="sexo" />
-          <label for="Femenino">Femenino</label>
-          <input type="radio" name="sexo" id="sexo" />
-        </div>
-        <div>
+        <label class="Femenino">Femenino 
+          <input type="radio" name="sexo2" id="sexo2" />
+        </label>
+        <p>Biografía</p>
+        <label class="Biografía">
           <textarea
             name="Biografía"
             id="Biografía"
@@ -110,39 +117,54 @@
             rows="5"
             placeholder="Escribe aquí tu biografía"
           ></textarea>
-        </div>
-        <label for="fotodeperfil">Foto de perfil</label>
-        <div>
-          <input
-            type="file"
-            id="fotodeperfil"
-            name="fotodeperfil"
-            accept="image/png, image/jpeg"
-          />
-        </div>
-        <label for="contraseña">Contraseña</label>
-        <input type="password" name="contraseña" id="contraseña" />
-        <div>
-          <label for="módulo">Módulo favorito</label>
+        </label>
+        <p>Foto de perfil</p>
+        <label class="fotodeperfil">
+          <input type="file" id="fotodeperfil" name="fotodeperfil" accept="image/png, image/jpeg" />
+        </label>
+        <p>Contraseña</p>
+        <label for="contraseña">
+          <input type="password" name="contraseña" id="contraseña" />
+        </label>
+        <p>Módulo favorito</p>
+        <label class="módulo">
           <select name="módulo" id="módulo">
             <option value="AW">Aplicaciones web</option>
             <option value="SI">Seguridad informática</option>
             <option value="SER">Servicios en red</option>
             <option value="SOR">Sistemas operativos en red</option>
           </select>
-        </div>
-        <div>
-          <label for="colores">Color favorito</label>
+        </label>
+        <p>Color favorito</p>
+        <label class="colores">
           <input type="color" />
-        </div>
-        <div>
+        </label>
+        <p>Pulse aquí para restablecer o envíar el formulario</p>
+        <label class="enviar">
           <button type="reset">Reiniciar</button>
+        </label>
+        <label class="reiniciar">
           <button type="submit">Finalizar</button>
-        </div>
+        </label>
       </form>
     </div>
-    <footer class="footer">
-      <h4>Página diseñada por Adrián Monteagudo Sánchez</h4>
-    </footer>
+<!--Formulario-->
+
+<!--Footer-->
+<footer class="footer">
+  <div class="footer_izquierda">
+    <p>Página diseñada por Adrián Monteagudo Sánchez</p>
+  </div>
+  <div class="footer_derecha">
+    <p>Paleta de colores utilizada en la página</p>
+    <div class="paleta">
+      <div class="rojo"></div>
+      <div class="gris"></div>
+      <div class="blanco"></div>
+    </div>
+  </div>
+</footer>
+<!--Footer-->
+
   </body>
 </html>

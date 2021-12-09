@@ -1,3 +1,5 @@
+/*Selector de etiqueta*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +10,22 @@ h1 {
   font-size: 33px;
 }
 
+/*Selector de etiqueta*/
+
+
+/*Body*/
+
 .body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   background-color: white;
+  background-image: url(../img/fondo/pattern.svg);
 }
+
+/*Body*/
+
+
+/*Header*/
 
 .header {
   display: flex;
@@ -52,14 +65,18 @@ h1 {
   transition: 0.5s linear;
 }
 
-.páginas a:hover {
+.nav {
+  text-transform: uppercase;
+}
+
+.nav ul li a:hover {
   color: black;
   background-color: #ea5655;
   border-radius: 10px;
 }
 
-.nav {
-  text-transform: uppercase;
+.nav ul li a {
+  padding: 20px;
 }
 
 .nav li {
@@ -67,30 +84,40 @@ h1 {
 
 }
 
-.nav ul div li a {
+.nav ul li a {
   text-decoration: none;
   transition: all 0.3s linear;
 }
 
-.páginas li a {
-  padding: 20px;
-}
+/*Header*/
+
+
+/*Columnas index article*/
 
 .section {
   font-family: "Calibri";
   font-weight: 300;
-  padding-top: 1.5%;
+  margin-top: 30px;
   margin-left: 10%;
   height: 75%;
   width: 80%;
   text-align: center;
 }
 
+.section h1 {
+  margin: 20px auto;
+  box-shadow: 0px 2px 10px;
+  border-radius: 10px;
+  width: 500px;
+  background-color: white;
+}
+
 .columnas {
   margin: 20px auto;
   padding-top: 40px;
-  border-radius: 20px;
-  background-color: rgba(17,17,17,0.75);
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px;
+  background-color: white;
   width: 60%;
   text-transform: uppercase;
   font-weight: bold;
@@ -101,7 +128,7 @@ h1 {
 
 .columnas li {
   list-style-type: none;
-  color: white;
+  color: black;
 }
 
 .columnas img {
@@ -118,11 +145,20 @@ h1 {
   text-align: center;
 }
 
+.section2 h1 {
+  margin: 20px auto;
+  box-shadow: 0px 2px 10px;
+  border-radius: 10px;
+  width: 630px;
+  background-color: white;
+}
+
 .columnas2 {
   margin: 20px auto;
   padding-top: 40px;
-  border-radius: 20px;
-  background-color: rgba(17,17,17,0.75);
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px;
+  background-color: white;
   width: 60%;
   text-transform: uppercase;
   font-weight: bold;
@@ -133,23 +169,12 @@ h1 {
 
 .columnas2 li {
   list-style-type: none;
-  color: white;
+  color: black;
 }
 
 .columnas2 img {
   width: 160px;
   padding-top: 40px;
-}
-
-.redes {
-  position: fixed;
-  right: 0px;
-  height: 320px;
-  margin-top: 230px;
-  margin-right: 20px;
-  background-color: rgba(17,17,17,0.75);
-  border-radius: 50px;
-  width: 70px;
 }
 
 .section3 {
@@ -162,11 +187,20 @@ h1 {
   text-align: center;
 }
 
+.section3 h1 {
+  margin: 20px auto;
+  box-shadow: 0px 2px 10px;
+  border-radius: 10px;
+  width: 590px;
+  background-color: white;
+}
+
 .columnas3 {
   margin: 20px auto;
   padding-top: 40px;
-  border-radius: 20px;
-  background-color: rgba(17,17,17,0.75);
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px;
+  background-color: white;
   width: 60%;
   text-transform: uppercase;
   font-weight: bold;
@@ -177,12 +211,29 @@ h1 {
 
 .columnas3 li {
   list-style-type: none;
-  color: white;
+  color: black;
 }
 
 .columnas3 img {
   width: 160px;
   padding-top: 40px;
+}
+
+/*Columnas index article*/
+
+
+/*Redes*/
+
+.redes {
+  position: fixed;
+  right: 0px;
+  height: 320px;
+  margin-top: 230px;
+  margin-right: 20px;
+  background-color: #101010;
+  box-shadow: 0px 2px 10px;
+  border-radius: 50px;
+  width: 70px;
 }
 
 .redes li {
@@ -206,26 +257,85 @@ h1 {
   transition: 0.6s;
 }
 
+/*Redes*/
+
+/*Footer*/
+
 .footer {
   position: fixed;
   bottom: 0px;
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
   height: 50px;
   width: 100%;
   background-color: #101010;
-}
-
-.footer h4 {
-  font-family: 'Calibri';
-  padding-left: 70px;
   color: white;
+  font-family: 'Calibri';
 }
 
-.footer h4::after {
+.footer p {
+  padding-top: 15px;
+}
+
+.footer_izquierda p {
+  float: left;
+  margin-left: 70px;
+}
+
+.footer_derecha p {
+  float: right;
+  margin-right: 70px;
+}
+
+.footer_izquierda p::after {
   content: " | 2021 - 2022";
 }
+
+.footer_derecha p::after {
+  content: " >";
+}
+
+.paleta {
+  position: fixed;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 15px;
+  background: #dfbba5;
+  border-radius: 50%;
+}
+
+.rojo {
+  background: #ea5655;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 11px;
+  margin-top: 2px;
+}
+
+.gris {
+  background: #101010;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 23px;
+  margin-top: -6px;
+}
+
+.blanco {
+  background: white;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 24px;
+  margin-top: 1px;
+}
+
+/*Footer*/
+
+
+/*Tabla principal*/
 
 .tabla_cv {
   width: 50%;
@@ -236,6 +346,7 @@ h1 {
   box-shadow: 0px 2px 10px;
   border-radius: 10px;
   margin-right: 240px;
+  background-color: white;
 }
 
 .tabla_cv td {
@@ -266,7 +377,7 @@ h1 {
 }
 
 .contenedor_nombreyapellidos {
-  font-size: 35px;
+  font-size: 2.3em;
   padding-bottom: 20px;
 }
 
@@ -283,18 +394,10 @@ h1 {
   padding-top: 10px;
 }
 
-.formulario {
-  width: 40%;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  margin-top: 40px;
-}
+/*Tabla principal*/
 
-.títuloformulario {
-  text-align: center;
-  margin-top: 70px;
-}
+
+/*Tarjetas flotantes a la izquierda de la tabla*/
 
 .tarjeta {
   position: fixed;
@@ -306,7 +409,7 @@ h1 {
   box-shadow: 0px 2px 10px;
   border-radius: 10px;
   text-align: center;
-
+  background-color: white;
 }
 
 .tarjeta h1 {
@@ -322,9 +425,9 @@ h1 {
   margin-bottom: 65px;
   margin-left: 170px;
   box-shadow: 0px 2px 10px;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
-
 }
 
 .tarjeta2 h1 {
@@ -341,3 +444,54 @@ h1 {
   padding-top: 50px;
   width: 370px; 
 }
+
+/*Tarjetas flotantes a la izquierda de la tabla*/
+
+
+/*Formulario*/
+
+.formulario {
+  width: 65%;
+  margin: 20px auto;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 10px;
+  border-radius: 10px;
+}
+
+.formulario h1 {
+  padding-top: 20px;
+}
+
+.formulario p {
+  padding-top: 10px;
+}
+
+.reiniciar button {
+  margin-bottom: 20px;
+
+}
+
+/*Formulario*/
+
+
+/*Proyecto*/
+
+.video_proyecto {
+  position: fixed;
+  width: 35%;
+  height: 44%;
+  margin: 190px auto;
+  margin-left: 30%;
+  background-color: white;
+  box-shadow: 0px 2px 10px;
+  border-radius: 10px;
+}
+
+.video_proyecto iframe {
+  margin: 50px;
+  border: 3px dashed black;
+}
+
+/*Proyecto*/
